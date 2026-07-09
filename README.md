@@ -1,330 +1,119 @@
-# Dropbox Clone — White-Label Solution by Miracuves
+# Dropbox Clone — White-Label File Sharing & Cloud Storage Platform by Miracuves
 
-[![Live Demo](https://img.shields.io/badge/Live_Demo-Try_Now-e8344f?style=for-the-badge)](https://mxcloud.mimeld.com)
-[![Solution Page](https://img.shields.io/badge/Solution_Page-miracuves.com-0b0b10?style=for-the-badge)](https://miracuves.com/dropbox-clone/)
+[![Live Demo](https://img.shields.io/badge/Live_Demo-Try_Now-e8344f?style=for-the-badge)](https://mxtransfer.mimeld.com)
+[![Website](https://img.shields.io/badge/Solution_Page-miracuves.com-0b0b10?style=for-the-badge)](https://miracuves.com/dropbox-clone/)
 [![Delivery](https://img.shields.io/badge/Go_Live-6_Working_Days-2ecc8f?style=for-the-badge)](https://miracuves.com/dropbox-clone/#pricing)
 [![Support](https://img.shields.io/badge/Support-60_Days_+_12mo_Updates-blue?style=for-the-badge)](https://miracuves.com/facts/)
 
+**MXTransfer** is a production-ready, white-label Dropbox clone: a complete file-sharing & cloud-storage platform with upload, share, preview, and admin console — delivered with **100% source code ownership** in **6 working days**.
+
+> 📦 **See it running before you talk to anyone.** Live upload app, web console, and admin dashboard — demo credentials are printed on the [solution page](https://miracuves.com/dropbox-clone#demo). No sales call required.
+
 ---
 
-## Table of Contents
-
-1. [Who Is This For?](#who-is-this-for)
-2. [How It Works](#how-it-works)
-3. [Core Features](#core-features)
-4. [Architecture](#architecture)
-5. [Revenue Streams](#revenue-streams)
-6. [What's Included](#whats-included)
-7. [Deployment Timeline](#deployment-timeline)
-8. [Why Not Build From Scratch?](#why-not-build-from-scratch)
-9. [Market Opportunity](#market-opportunity)
-10. [Client Testimonials](#client-testimonials)
-11. [FAQ](#faq)
-12. [Resources](#resources)
-13. [About Miracuves](#about-miracuves)
-
-## Live Demos
+## 🚀 Live Demos
 
 | Environment | URL | What you can test |
 |---|---|---|
-| Web Platform | [mxcloud.mimeld.com](https://mxcloud.mimeld.com) | Full experience in the browser |
-| Mobile App (Android) | [mas.mimeld.com](https://mas.mimeld.com) | Browse, transact, engage |
-| Admin Dashboard | [Solution page → Demo](https://miracuves.com/dropbox-clone/#demo) | Users, content, plans, analytics |
+| 📱 Mobile App | [mas.mimeld.com](https://mas.mimeld.com) | Upload, share, preview, secure link |
+| 🌐 Web Console | [mxtransfer.mimeld.com](https://mxtransfer.mimeld.com) | Full file management in browser |
+| 📊 Analytics | [Solution page → Demo](https://miracuves.com/dropbox-clone#demo) | File views, geo, downloads |
+| 🛠️ Admin Dashboard | [Solution page → Demo](https://miracuves.com/dropbox-clone#demo) | Users, plans, abuse, storage |
 
-Demo credentials: [miracuves.com/dropbox-clone -> Demo section](https://miracuves.com/dropbox-clone/#demo)
-
-## What Makes This Dropbox Clone Different
-
-<!-- TODO: fill 3-5 vertical-specific differentiators -->
-
-## Who Is This For?
-
-| Buyer Type | Use Case |
-|---|---|
-| SaaS Founders | Launch a cloud storage and file sharing platform |
-| Enterprise IT Teams | Build a secure internal file sharing solution |
-| Agencies | White-label file sharing platform for clients |
+Demo credentials for all environments: **[miracuves.com/dropbox-clone → Demo section](https://miracuves.com/dropbox-clone/#demo)**
 
 ---
 
-## How It Works
+## ✨ What Makes This Dropbox Clone Different
 
-1. User uploads files via web, mobile, or desktop app
-2. Files are synced in real time across all connected devices
-3. User creates shared folders and invites team members with permissions
-4. Team members access, edit, and comment on files with version tracking
-5. Admin monitors usage, manages users, and configures security policies
-6. Billing is based on storage tier and number of users
+Most file-sharing scripts stop at "upload + share link." This platform ships with the features that actually run a file-sharing *business*:
 
----
+- **Up To 100GB Free Transfers** — large-file transfer with no signup needed — same conversion trick WeTransfer pioneered
+- **Secure Links + Expiry** — 
+- **Preview 200+ File Types** — every share link gets password, expiry, and watermark options — Dropbox Smart Workspace basics
+- **E-Signature Built In** — custom domain, logo, colors on every share page — what agencies need for client work
+- **White-Label Branding** — request signatures on PDFs, track signer progress, audit log — saves a SaaS subscription for clients
 
-## Core Features
+## 📦 Core Features
 
-### User App (Web + Mobile)
-- File upload with drag-and-drop and folder organization
-- Real-time file sync across devices
-- Share files and folders with link generation and permission control
-- Version history with file restore
-- File preview for documents, images, and videos
+**User:** upload & preview · secure share links · expiry controls · password protection · folders · search · e-sign · mobile sync
 
-### Team Features
-- Team folders with role-based access
-- File commenting and notification
-- Collaborative document editing
-- Admin console for team management
+**Account:** storage usage analytics · recipient analytics · custom branding on shared pages
 
-### Admin Panel
-- User management with storage quotas
-- Security policies (2FA, password policies, device management)
-- Usage analytics and storage reports
-- Billing and subscription management
-- API access management for integrations
+**Admin:** user management · plans & quotas · storage quotas · abuse takedowns · analytics
 
----
-
-## Advanced Features
-
-The platform integrates AI-powered features that reduce manual overhead and capture revenue opportunities:
-
-- **AI File Organization** - Automatically categorizes and tags files for easy search
-- **AI Content Search** - Full-text search across documents with content recognition
-- **AI Storage Optimization** - Recommends files for archival or deletion based on usage patterns
-
----
-
-## Apps and Web Panels
-
-| Module | Description |
-|---|---|
-| Web Platform | File management, sharing, preview |
-| Mobile App (iOS + Android) | File access, upload, share on the go |
-| Desktop App (Win/Mac) | Folder sync, offline access, drag-and-drop |
-| Admin Web Panel | Users, security, billing, analytics |
-
----
-
-## Architecture
+## 🏗️ Architecture
 
 ```mermaid
 flowchart LR
-    A[Flutter Apps<br/>Android · iOS] --> G[REST API<br/>Laravel Backend]
-    W[Web Platform<br/>Responsive] --> G
-    P[Partner Panel] --> G
-    AD[Admin Dashboard] --> G
-    G --> DB[(MySQL)]
-    G --> S3[Object Storage]
+    A[Mobile App<br/>Flutter]
+    B[Web Console<br/>Next.js]
+    W[Analytics]
+    AD[Admin Dashboard]
+    A --> G[REST API<br/>Node.js]
+    B --> G
+    W --> G
+    AD --> G
+    G --> DB[(PostgreSQL)]
+    G --> S3[Object Storage<br/>Files]
+    S3 --> CDN[Global CDN]
+    CDN --> B
+    G --> PAY[Stripe]
 ```
 
-**Stack:**
+**Stack:** React/Next.js for web · Flutter mobile · Node.js backend · S3-compatible object storage · Postgres for metadata · Redis for share-link cache · Stripe, regional gateways
 
-| Layer | Technology |
-|---|---|
-| Web Platform | React.js |
-| Mobile Apps | Flutter (iOS + Android) |
-| Desktop Apps | Electron (Windows + Mac) |
-| Backend API | Node.js + Express |
-| Database | MongoDB |
-| File Storage | AWS S3 / DigitalOcean Spaces |
-| Real-time | WebSockets for file sync |
-| Cloud Hosting | AWS / DigitalOcean / Contabo VPS |
+## 📋 What’s Included
 
----
+- ✅ Full source code — backend, web, mobile apps, panels (no encryption, no license locks)
+- ✅ Deployment to your servers & app store submission assistance
+- ✅ Your branding — white-label rename, logo, colors, domain
+- ✅ 60 days post-launch support + 12 months of free updates
+- ✅ Documentation & handover
 
-## Revenue Streams
+**Pricing:** from **$2,799**, transparent on the [solution page](https://miracuves.com/dropbox-clone/#pricing) — no "contact us for quote" games.
 
-The platform is engineered to generate revenue from day one through multiple complementary channels:
+## 🆚 Why Not Build From Scratch?
 
-- **Storage subscriptions** - monthly/annual plans by storage tier
-- **Team licenses** - per-user pricing for team and enterprise
-- **Extra storage add-ons** - additional storage beyond plan limits
-- **API access** - developer API with usage-based pricing
+Custom file-sharing platforms run $60k–$250k and 4–8 months. A proven white-label base gets you to market in 6 working days for a fraction of that, with your budget preserved for storage margins and integration outreach.
 
----
+## 📚 Resources
 
-## Security and Compliance
+- 📖 [Dropbox Clone — Full Solution Page](https://miracuves.com/dropbox-clone) (features, pricing, demos, FAQ)
+- 💰 [How Much Does a File Sharing App Cost in 2026?](https://miracuves.com/dropbox-clone#pricing) pricing breakdown & what's included
+- 📝 [Best Dropbox Clone Script in 2026](https://miracuves.com/dropbox-clone/blog/) features, pricing & launch guide
+- 🧠 [Large-File Transfers: Conversion to Paid Plans](https://miracuves.com/dropbox-clone/blog/) freemium math, WeTransfer play
+- ✅ [Miracuves Facts & Claims Ledger](https://miracuves.com/dropbox-clone/facts/) every claim we make, verified
 
-- OTP-based authentication
-- SSL/TLS encrypted API communication
-- GDPR-ready data handling
+## 🏢 About Miracuves
+
+[Miracuves Solutions](https://miracuves.com) builds white-label clone apps and custom software from Mumbai, India — 90+ ready-made solutions, live demos for every product, transparent pricing, and delivery in 6 working days. Operating since 2010.
+
+**Talk to us:** [WhatsApp](https://wa.me/919830009649) · [Schedule a consultation](https://miracuves.com/schedule-consultation/) · [miracuves.com](https://miracuves.com)
 
 ---
 
-## What's Included
+### ⚠️ Note on This Repository
 
-| Plan | Price | What You Get |
-|---|---|---|
-| Standard | **$$2,799** | Complete source code, all apps, admin panel, rebranding, 1 year updates |
-| Enterprise | Custom Quote | Everything in Standard + custom features, multi-region, priority support |
+This repository is a product overview. The full source code is delivered to clients on purchase — see [what’s included](https://miracuves.com/dropbox-clone/#included). For a hands-on evaluation, use the live demos above; credentials are public on the solution page.
 
-**What is included:**
-
-- Web Platform
-- Mobile App (iOS + Android)
-- Desktop App (Win/Mac)
-- Admin Web Panel
-- Full Source Code
-- Complete Rebranding (your logo, colors, app name)
-- Server Deployment
-- App Store and Google Play Submission Support
-- 60 Days Free Bug Support
-- Free 1-Year Updates
+*Keywords: dropbox clone, dropbox clone script, file sharing, cloud storage, large file transfer, white label WeTransfer, e-signature, Flutter storage app, Node.js storage*
 
 ---
-**Pricing:** from **$2,499** — transparent on the [solution page](https://miracuves.com/dropbox-clone/#pricing).
-
-
-## Deployment Timeline
-
-| Day | Milestone |
-|---|---|
-| Day 1 | Server setup, environment configuration, initial deployment |
-| Day 2 | White-labeling - app name, logo, colors, splash screens |
-| Day 3 | Payment gateway integration + third-party API configuration |
-| Day 4 | Custom feature implementation (if applicable) |
-| Day 5 | QA, testing, bug fixes across all panels |
-| Day 6 | App Store + Google Play submission + Go-live |
-
-> **Average go-live: 6 business days from payment confirmation.**
-
----
-
-## Why Not Build From Scratch?
-
-| Factor | Build from Scratch | Miracuves Solution |
-|---|---|---|
-| Time to Launch | 6-12 months | 6 days |
-| Development Cost | $60,000-$150,000 | From $$2,799 |
-| Source Code Ownership | Yes | Yes |
-| Customization | Full | Full |
-| Post-Launch Support | Depends on team | 60 days included |
-| Risk | High | Low |
-
----
-
-## Market Opportunity
-
-| Metric | Data |
-|---|---|
-| Global Cloud Storage Market (2024) | $135 billion |
-| Projected Market Size (2030) | $376 billion |
-| CAGR | ~18% |
-| Key Growth Markets | USA, India, China, UK, Germany |
-| Average Files Stored Per User | 1,500+ |
-
-> Source: Statista, Grand View Research, Allied Market Research
-
----
-
-## Successful Verticals
-
-- Cloud file storage and sync (like Dropbox, Google Drive)
-- Enterprise document management
-- Team collaboration platforms
-- Secure file sharing and transfer services
-
----
-
-## Client Testimonials
-
-> *"The file sync engine is rock solid. Our enterprise customers love the real-time sync and version history features."*
-> - CTO, Cloud Storage Startup
-
----
-
-## FAQ
-
-**How much does a Dropbox clone cost?**
-A white-label Dropbox clone from Miracuves starts at $2,799 with complete source code ownership.
-
-**Does it support real-time sync?**
-Yes. Real-time file sync across web, mobile, and desktop.
-
-**Can I set storage quotas per user?**
-Yes. Admin-configured storage quotas and usage limits.
-
-**Is encryption included?**
-Yes. End-to-end encryption with enterprise security policies.
-
-**Do I get the source code?**
-Yes. Complete source code ownership is included.
-
-**How long does it take to launch?**
-6 business days from payment confirmation.
-
----
-
-## Related Solutions
-
-Explore our other white-label clone solutions:
-
-- [Google Drive Clone - Cloud Storage](https://github.com/Miracuves-Solutions/GoogleDrive-Clone)
-- [OneDrive Clone - File Sharing](https://github.com/Miracuves-Solutions/OneDrive-Clone)
-- [Box Clone - Enterprise Storage](https://github.com/Miracuves-Solutions/Box-Clone)
-
----
-
-## Resources
-
-- [Full Solution Page](https://miracuves.com/dropbox-clone/) — features, pricing, demos, FAQ
-
-
-## Get Started
-
-**Ready to launch your file sharing and storage platform?**
-
-| Channel | Link |
-|---|---|
-| Full Solution Page | [miracuves.com/dropbox-clone](https://miracuves.com/dropbox-clone/) |
-| Email | info@miracuves.com |
-| WhatsApp | [+91 98300 09649](https://wa.me/919830009649) |
-| Book a Call | [Free Consultation](https://miracuves.com/contact/) |
-
----
-
-## About Miracuves
-
-**Miracuves Solutions Pvt. Ltd.** is a Mumbai-based software company specializing in white-label clone app solutions across 12+ industries.
-
-- 90+ ready-to-deploy solutions
-- 6-day delivery guarantee
-- 60+ engineers on staff
-- 3,900+ apps delivered
-- Full source code ownership
-- Clients across 40+ countries including India and USA
-
-[Explore all 90+ solutions at miracuves.com](https://miracuves.com)
-
----
-
-## Disclaimer
-
-This product is independently developed by Miracuves. All product names, logos, and brands are property of their respective owners. Use of these names does not imply endorsement.
-
----
-
-<div align="center">
-
-*(c) 2026 Miracuves Solutions Pvt. Ltd. | Mumbai, India*
-*This repository contains product documentation only - no proprietary source code is published here.*
-
-</div>
-
-
-*Keywords: dropbox clone, dropbox script, white label solution, laravel flutter app, clone script*
-
-
-
----
-
-### Note on This Repository
-
-This repository is a product overview. The full source code is delivered to clients on purchase. For a hands-on evaluation, use the live demos above; credentials are public on the solution page.
-
 
 <!--
-=========================================================
-GENERATED FROM MIRACUVES NETFLIX-CLONE README TEMPLATE
-Canon: 6 working days, from $2,799 floor, 60 days support + 12 months updates.
-Never use 3 days. See https://miracuves.com/facts/ for audited claims.
-=========================================================
+══════════════════════════════════════════════════
+TEMPLATE VARIABLE KEY — auto-generated from Netflix-Clone pattern
+══════════════════════════════════════════════════
+{APP_NAME}        Dropbox Clone
+{MX_NAME}         MXTransfer
+{CATEGORY}        File Sharing & Cloud Storage Platform
+{DEMO_WEB}        mxtransfer.mimeld.com
+{PRICE}           $2,799
+{SLUG}            dropbox-clone
+{SOLUTION_URL}    https://miracuves.com/dropbox-clone/
+{VERTICAL}        storage
+
+See /tmp/verticals/storage.txt for the vertical config used to generate this README.
+══════════════════════════════════════════════════
 -->
